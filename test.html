@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>test.xml selection</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript">
+</script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript">
+</script>
+    <script type="text/javascript">
+$(function() {
+    $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+    $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+    });
+    </script>
+    <style type="text/css">
+.ui-tabs-vertical { width: 55em; }
+    .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+    .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+    .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+    .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+    .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+    </style>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {        
+                $('.explanation').hide();
+                $('.answer').hide();
+                $('.showExplanation').click(function () {
+                    $(this).siblings('.explanation').show();
+                    $(this).siblings().children('.explanation').show();
+                });
+                $('.selectah').click(function () {
+                    $(this).siblings('.answer').addClass('explanation');
+                });
+             });
+    </script>
+</head>
+
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#1511">1511</a></li>
+
+            <li><a href="#6866">6866</a></li>
+
+            <li><a href="#7377">7377</a></li>
+        </ul>
+
+        <form method="post" action="">
+            <input type="submit" value="grade test"><br>
+
+            <div id="1511">
+                <h2>Question 1511</h2>
+
+                <p>Lorem ipsum dolor sit amet, omittam complectitur nam an, referrentur repudiandae accommodare cu per, has eius fabulas at. An pro everti iuvaret, no eam noster persecuti. Vim ea invidunt mediocritatem. Primis propriae at his, vidit inimicus inciderint ius ut. Mea laudem qualisque molestiae ea. Maiorum vivendum elaboraret no mei, cu eum possim saperet fierent, ex rebum adipisci urbanitas sit.</p><br>
+
+                <div><input type="radio" name="1511" id="1" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="1511" id="2" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="1511" id="3" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="1511" id="4" class="selectah">lorem ipsum<img src="static/right.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="1511" id="5" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+                <button class="showExplanation">show answer</button>
+
+                <div class="explanation">
+                    <p>Lorem ipsum dolor sit amet, omittam complectitur nam an, referrentur repudiandae accommodare cu per, has eius fabulas at. An pro everti iuvaret, no eam noster persecuti. Vim ea invidunt mediocritatem. Primis propriae at his, vidit inimicus inciderint ius ut. Mea laudem qualisque molestiae ea. Maiorum vivendum elaboraret no mei, cu eum possim saperet fierent, ex rebum adipisci urbanitas sit.</p>
+                </div>
+            </div>
+
+            <div id="6866">
+                <h2>Question 6866</h2>
+
+                <p>!Lorem ipsum dolor sit amet, omittam complectitur nam an, referrentur repudiandae accommodare cu per, has eius fabulas at. An pro everti iuvaret, no eam noster persecuti. Vim ea invidunt mediocritatem. Primis propriae at his, vidit inimicus inciderint ius ut. Mea laudem qualisque molestiae ea. Maiorum vivendum elaboraret no mei, cu eum possim saperet fierent, ex rebum adipisci urbanitas sit.</p><br>
+
+                <div><input type="radio" name="6866" id="1" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="6866" id="2" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="6866" id="3" class="selectah">lorem ipsum<img src="static/right.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="6866" id="4" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="6866" id="5" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+                <button class="showExplanation">show answer</button>
+
+                <div class="explanation">
+                    <p>Usu graece tibique tacimates ne, appetere indoctum suscipiantur ea sea. Ad quas eleifend nec. Ex delectus salutatus eam, saepe nemore tritani ei eam, tempor utroque explicari mea ei. Epicurei voluptatibus et nam, sonet munere nam an. Quo ex enim vidisse, id mea justo pericula, te nam nonumy vocent rationibus.</p>
+                </div>
+            </div>
+
+            <div id="7377">
+                <h2>Question 7377</h2>
+
+                <p>Vocibus eligendi mea ad. Ut sonet commodo aliquid per, ut vel posse essent, an suas copiosae per. Te ferri quidam cum, eu mel sonet mollis eruditi. Enim suscipit et mea, id eum diceret aliquid suscipit. Eum eu quot utroque rationibus, has ea choro deterruisset, no cum noster commodo. Mel ut odio conclusionemque, detraxit sapientem eum ut, eam at adhuc augue detraxit.</p>
+
+                <blockquote>
+                    <table border="0" cellpadding="0" cellspacing="0" width="400">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Mutat</td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;idque</td>
+
+                                <td>audiam</td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;no</td>
+
+                                <td>duo</td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;Cum</td>
+
+                                <td>et</td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;ridens</td>
+
+                                <td>suscipit<sup><font size="2">3</font></sup></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </blockquote>
+
+                <p>Id sea nibh recteque. Eu sale zril expetendis ius, te insolens lobortis nec. At cum sumo cibo detracto. Ius ne patrioque constituam ullamcorper.</p><br>
+
+                <div><input type="radio" name="7377" id="1" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="7377" id="2" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="7377" id="3" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="7377" id="4" class="selectah">lorem ipsum<img src="static/wrong.gif" class="answer"></div><br>
+
+                <div><input type="radio" name="7377" id="5" class="selectah">lorem ipsum<img src="static/right.gif" class="answer"></div><br>
+                <button class="showExplanation">show answer</button>
+
+                <div class="explanation">
+                    <p>Lorem ipsum dolor sit amet, omittam complectitur nam an, referrentur repudiandae accommodare cu per, has eius fabulas at. An pro everti iuvaret, no eam noster persecuti. Vim ea invidunt mediocritatem. Primis propriae at his, vidit inimicus inciderint ius ut. Mea laudem qualisque molestiae ea. Maiorum vivendum elaboraret no mei, cu eum possim saperet fierent, ex rebum adipisci urbanitas sit.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
