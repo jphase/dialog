@@ -57,10 +57,10 @@
     this.opts = defaults;
   };
 
-	$.fn.dialog = function(opts) {	
-		return this.each(function() {
-			new dialog(this, opts);
-		});
-	};
+  $.fn.dialog = function(opts) {	
+    return this.each(function() {
+      new dialog(this, opts);
+    });
+  };
 
 })(jQuery, document, window);
