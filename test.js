@@ -1,7 +1,7 @@
 ;(function($, doc, win) {
-	"use strict";
+  "use strict";
 
-	function dialog(el, opts){
+  function dialog(el, opts) {
     this.$el = $(el);
     this.init(opts);
 
@@ -13,7 +13,7 @@
     ).appendTo('body');
 	}
 
-	dialog.prototype.init = function(opts){
+	dialog.prototype.init = function(opts) {
     // Defaults
     var defaults = {
       content: '',
@@ -41,11 +41,11 @@
         }
       },
       buttons: [
-        $('<button>').click(function(){
+        $('<button>').click(function() {
           $('#custom-overlay').remove();
           return true;
         }).text('Yes'),
-        $('<button>').click(function(){
+        $('<button>').click(function() {
           $('#custom-overlay').remove();
           return false;
         }).text('No')
@@ -57,8 +57,8 @@
     this.opts = defaults;
 	};
 
-	$.fn.dialog = function(opts){	
-		return this.each(function(){
+	$.fn.dialog = function(opts) {	
+		return this.each(function() {
 			new dialog(this, opts);
 		});
 	};

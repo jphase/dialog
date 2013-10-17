@@ -9,62 +9,19 @@
 	<div class="dialog"></div>
 	<script src="test.js"></script>
 	<script>
-jQuery(document).ready(function($){
-	$('.dialog').dialog({content: 'this is a test?'});
-});
-
-	/*
-	function $.fn.dialog = function(opts){	
-		    // Defaults
-		    var defaults = {
-		        content: '',
-		        css: {
-		            overlay: {
-		                width: '100%',
-		                height: '100%',
-		                zIndex: 100,
-		                background: 'rgba(0,0,0,.3) repeat'
-		            },
-		            dialog: {
-		                padding: '2em',
-		                zIndex: 101,
-		                background: '#fafafa',
-		                color: '#222'
-		            }
-		        },
-		        buttons: [
-		            $('<button>').click(function(){
-		                $('#custom-overlay').remove();
-		                return true;
-		            }).text('Yes'),
-		            $('<button>').click(function(){
-		                $('#custom-overlay').remove();
-		                return false;
-		            }).text('No')
-		        ]
-		    }
-		    
-		    // Extend defaults with opts passed
-		    $.extend(defaults, opts);
-		    console.log(defaults);
-		    
-		    // Setup overlay markup
-		    $('<div>').prop({
-		        id: 'custom-overlay'
-		    }).append(
-		        $('<p>').prop({
-		            
-		        }).html($.parseHTML(content));
-		    ).appendTo('body');
-		}
-		
+	jQuery(document).ready(function($){
 		$('.dialog').dialog({
-		    content: 'Are you sure you want to delete all the files on your computer?'
-		});
-	
+			content: 'this is a test?',
+			css: {
+				dialog: {
+          background: 'pink repeat'
+				}
+			},
+			buttons: [
+				$('<a>').text('hi').prop('href', 'http://google.com').click(function(){alert('hi')})
+			]
+		})
 	});
-*/
-
 	</script>	
 </body>
 </html>
