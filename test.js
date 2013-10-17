@@ -13,7 +13,7 @@
     ).appendTo('body');
 	}
 
-	dialog.prototype.init = function(opts) {
+  dialog.prototype.init = function(opts) {
     // Defaults
     var defaults = {
       content: '',
