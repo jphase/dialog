@@ -28,8 +28,8 @@
           background: 'rgba(0,0,0,.3) repeat'
         },
         dialog: {
-        	width: '50%',
-        	minHeight: '40%',
+          width: '50%',
+          minHeight: '40%',
           padding: '2%',
           zIndex: 101,
           position: 'fixed',
