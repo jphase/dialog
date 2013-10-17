@@ -11,7 +11,7 @@
     }).css(this.opts.css.overlay).append(
       $('<p>').css(this.opts.css.dialog).html($.parseHTML(this.opts.content)).append(this.opts.buttons)
     ).appendTo('body');
-	}
+  }
 
   dialog.prototype.init = function(opts) {
     // Defaults
