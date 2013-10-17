@@ -52,10 +52,10 @@
       ]
     }
 
-		// Extend defaults with opts passed
+    // Extend defaults with opts passed
     $.extend(defaults, opts);
     this.opts = defaults;
-	};
+  };
 
 	$.fn.dialog = function(opts) {	
 		return this.each(function() {
