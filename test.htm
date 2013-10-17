@@ -10,17 +10,7 @@
 	<script src="test.js"></script>
 	<script>
 	jQuery(document).ready(function($){
-		$('.dialog').dialog({
-			content: 'this is a test?',
-			css: {
-				dialog: {
-          background: 'pink repeat'
-				}
-			},
-			buttons: [
-				$('<a>').text('hi').prop('href', 'http://google.com').click(function(){alert('hi')})
-			]
-		})
+		$('.dialog').dialog();
 	});
 	</script>	
 </body>
